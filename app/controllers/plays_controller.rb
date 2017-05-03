@@ -13,7 +13,7 @@ class PlaysController < ApplicationController
 	end
 
 	def create
-		@play = current_user.play.build(play_params)
+		@play = current_user.play.buil(play_params)
 
 		if @play.save
 			redirect_to root_path
